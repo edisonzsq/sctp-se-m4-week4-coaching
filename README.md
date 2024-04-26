@@ -59,7 +59,7 @@ git remote add origin <YOUR_GITHUB_REPO_URL>
 git push -u origin master
 ```
 
-## Step 5: Step 5: Connect Your GitHub Repository to Vercel
+## Step 5: Connect Your GitHub Repository to Vercel
 
 1. Log in to your Vercel account.
 1. Click on "New Project".
