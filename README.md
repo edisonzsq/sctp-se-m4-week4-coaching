@@ -3,7 +3,22 @@
 <details>
 <summary> 1. Next.js and Vercel </summary>
 
+## What is Next.js?
+
+Next.js is a full stack web application framework developed by Vercel. 
+
+|Feature|React|Next.js|
+|-|-|-|
+|Routing|Use of react router|Use of folder structure for routing|
+|Pre-fetch|N/A|When a link is on the screen, or mouse over a certain link, Next.js can pre-fetch the data so that when user clicks on them, the load time is faster.|
+|Serverless API|React is a pure frontend framework.|Next.js comes with the ability to develop serverless API if you are using client-side component (SPA), or Server Actions if you are using server-side component.|
+|Debugging|React comes with debugging tools.|Next.js has debugging tools. When deployed to Vercel as staging, there are collaboration tool comes out of the box.|
+
+## Objective
+
 This guide will take you through the process of setting up a Next.js project, pushing it to GitHub, and configuring automatic deployments to Vercel. Each new push to GitHub will trigger a Vercel deployment, creating a dedicated URL for that deployment.
+
+> At the end of the walkthrough, we will discuss the difference between Vercel and CircleCI.
 
 ## Prerequisites
 
@@ -66,10 +81,35 @@ git push -u origin master
 
 You now have a fully functional workflow that initializes a Next.js project, tracks it with Git, and deploys updates to Vercel with unique URLs for each push. This setup is ideal for continuous integration and delivery practices in modern web development.
 
+## Discussion
+
+> What difference do you notice between CircleCI and Vercel? How do you choose between them?
+
 </details>
 
 <details>
-<summary> 2. Understanding Other Roles - SRE and Platform Engineering </summary>
+<summary> 2. Industry Standard for Security </summary>
+
+## What is DevSecOps
+
+DevSecOps, short for Development, Security, and Operations, integrates security practices within the DevOps process. It aims to automate and embed security at every phase of the software development lifecycle, from initial design through integration, testing, deployment, and software delivery. This approach ensures that security considerations are not an afterthought but are integrated throughout the development process.
+
+## Security Dilemma
+
+<img src="https://img.freepik.com/free-photo/asian-man-questioning-perspective_482257-76814.jpg?size=626&ext=jpg" />
+
+In today’s fast-paced technological landscape, organizations face the ongoing challenge of balancing the need to reduce delivery friction with the necessity to comply with stringent corporate policies. This balance is crucial, particularly in fields such as software development and system deployment, where the speed of delivery can be essential for competitive advantage, yet strict adherence to security, regulatory, and quality standards is non-negotiable.
+
+Examples:
+- Tools that improve delivery are not approved for use
+- Tools that improve delivery are not compatible with current architecture governed by infra and network policy
+- The speed of tools adoption is slowed down by corporate policy
+- DevSecOps Engineers are required to adapt to fast-changing delivery requirement and getting up to date with security policy and standards
+
+</details>
+
+<details>
+<summary> 3. Understanding Other Roles - SRE and Platform Engineering </summary>
 
 ## Definitions
 
