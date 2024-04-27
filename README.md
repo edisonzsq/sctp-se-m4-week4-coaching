@@ -133,3 +133,17 @@ Examples:
 <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0fdc1b7-dde6-4afb-b462-713c1bd016e9_800x1146.jpeg" />
 
 </details>
+
+<details>
+<summary> 4. Module 4 Project</summary>
+
+```mermaid
+
+sequenceDiagram
+
+GitHub ->> CI Workflow (CircleCI) :1. Perform push/pull code into build server
+CI Workflow (CircleCI) ->> Heroku Image Repository : Build image and push to heroku repository
+Heroku Image Repository ->> Heroku Container Hosted Server : Pull image from registry and deploy
+
+```
+</details>
