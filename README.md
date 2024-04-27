@@ -141,9 +141,9 @@ Examples:
 
 sequenceDiagram
 
-GitHub ->> CI Workflow (CircleCI) :1. Perform push/pull code into build server
-CI Workflow (CircleCI) ->> Heroku Image Repository : Build image and push to heroku repository
-Heroku Image Repository ->> Heroku Container Hosted Server : Pull image from registry and deploy
+GitHub ->> CI Workflow (CircleCI) : Perform push/pull code into build server;
+CI Workflow (CircleCI) ->> Heroku Image Repository : Build image and push to heroku repository;
+Heroku Image Repository ->> Heroku Container Hosted Server : Pull image from registry and deploy;
 
 ```
 </details>
